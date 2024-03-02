@@ -14,7 +14,6 @@ import * as ActionTypes from '../actions/types';
 let chnl = null;
 
 export default function* refreshSaga() {
-  yield console.log('running refresh saga');
   yield takeLatest(ActionTypes.SET_FEED, startRefresh);
   yield takeLatest(ActionTypes.SET_REFRESH_INTERVAL, startRefresh);
   yield takeLatest(ActionTypes.START_REFRESH, startRefresh);
@@ -23,7 +22,6 @@ export default function* refreshSaga() {
 
 function* startRefresh() {
   yield delay(500);
-  yield console.log('should start refresh');
 
   const filter = yield select(getFilter);
 
@@ -51,7 +49,6 @@ function* startRefresh() {
 
 function* stopRefresh() {
   yield delay(500);
-  yield console.log('should stop refresh');
   if (chnl) {
     chnl.close();
   }
