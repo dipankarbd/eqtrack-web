@@ -1,4 +1,3 @@
- 
 # EQTrack
 
 EQTrack is a web application built with React to view latest earthquake data.
@@ -32,4 +31,4 @@ EQTrack can be deployed using either a build script or Docker. Follow the instru
 3. Run the container in detached mode by executing `docker run -p 3000:80 eqtrack`.
 
 ## Screenshots
-![Web App Screenshot](screenshot.png)
+![Web App Screenshot](./Screenshot.png)
