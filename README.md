@@ -1,3 +1,4 @@
+![Test](https://github.com/dipankarbd/eqtrack-web/actions/workflows/test.yml/badge.svg)
 # EQTrack
 
 EQTrack is a web application built with React to view latest earthquake data.
